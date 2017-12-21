@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>vee_clips</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="vee_clips - Gary Vee sound bites" />
+    <meta property="og:url" content="http://bjblayney.com/vee_clips" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://bjblayney.com/vee_clips/img/bg-2.jpg" />
+    <meta property="og:description" content="The skill is a commodity, the mindset is everything." />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="vee_clips - Gary Vee sound bites">
+    <meta name="twitter:description" content="The skill is a commodity, the mindset is everything.">
+    <meta name="twitter:image:src" content="http://bjblayney.com/vee_clips/img/bg-2.jpg">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:400,900">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>vee_clips</h1>
+            <p><a href="https://twitter.com/garyvee" target="_blank">@Garyvee</a> audio clips.</p>
+        </header>
+        
+        <div data-key="65" class="panel key">
+            <kbd>A</kbd>
+            <span class="sound">Eat-Some-Fruity-Pebbles</span>
+        </div>
+        <div data-key="83" class="panel key">
+            <kbd>S</kbd>
+            <span class="sound">Either-On-Offense-Or-Not</span>
+        </div>
+        <div data-key="68" class="panel key">
+            <kbd>D</kbd>
+            <span class="sound">Fuck-You-Monday</span>
+        </div>
+        <div data-key="70" class="panel key">
+            <kbd>F</kbd>
+            <span class="sound">Fuck-Your-Gonna</span>
+        </div>
+        <div data-key="71" class="panel key">
+            <kbd>G</kbd>
+            <span class="sound">Honey-Empire-Bitches</span>
+        </div>
+        <div data-key="72" class="panel key">
+            <kbd>H</kbd>
+            <span class="sound">I-Am-Savage</span>
+        </div>
+        <div data-key="74" class="panel key">
+            <kbd>J</kbd>
+            <span class="sound">Its-Just-Real</span>
+        </div>
+        <div data-key="75" class="panel key">
+            <kbd>K</kbd>
+            <span class="sound">Marketers-Ruin-Everything</span>
+        </div>
+        <div data-key="76" class="panel key">
+            <kbd>L</kbd>
+            <span class="sound">Mondays-My-Bitch</span>
+        </div>
+        <div data-key="82" class="panel key">
+            <kbd>R</kbd>
+            <span class="sound">Smurf-it-Up</span>
+        </div>
+        <div data-key="84" class="panel key">
+            <kbd>T</kbd>
+            <span class="sound">So-Stop-Making-Excuses</span>
+        </div>
+        <div data-key="89" class="panel key">
+            <kbd>Y</kbd>
+            <span class="sound">Straight-Creeper</span>
+        </div>
+        <div data-key="85" class="panel key">
+            <kbd>U</kbd>
+            <span class="sound">What-Now-Bitch</span>
+        </div>
+        <div data-key="86" class="panel key">
+            <kbd>V</kbd>
+            <span class="sound">Yes-That-Would-Be-Great</span>
+        </div>
+        <div data-key="66" class="panel key">
+            <kbd>B</kbd>
+            <span class="sound">Yummers</span>
+        </div>
+        
+        <footer class="footer">
+            <h3>"The skill is a commodity, the mindset is everything."</h3>
+            <p>Inspired: <a href="https://javascript30.com/" class="zips" target="_blank">javascript30.com</a> Sounds: <a href="https://garyveetones.com/" class="zips" target="_blank">garyveetones.com</a> Grid: <a href="https://gridbyexample.com/patterns/header-asmany-footer/" class="zips" target="_blank">gridbyexample.com</a> </p>
+        </footer>
+    </div>
+
+    <audio data-key="65" src="audio/Eat-Some-Fuity-Pebbles.mp3"></audio>
+    <audio data-key="83" src="audio/Either-On-Offense-Or-Not.mp3"></audio>
+    <audio data-key="68" src="audio/Fuck-You-Monday.mp3"></audio>
+    <audio data-key="70" src="audio/Fuck-Your-Gonna.mp3"></audio>
+    <audio data-key="71" src="audio/Honey-Empire-Bitches.mp3"></audio>
+    <audio data-key="72" src="audio/I-Am-Savage.mp3"></audio>
+    <audio data-key="74" src="audio/Its-Just-Real.mp3"></audio>
+    <audio data-key="75" src="audio/Marketers-Ruin-Everything.mp3"></audio>
+    <audio data-key="76" src="audio/Mondays-My-Bitch.mp3"></audio>
+    <audio data-key="82" src="audio/Smurf-it-Up.mp3"></audio>
+    <audio data-key="84" src="audio/So-Stop-Making-Excuses.mp3"></audio>
+    <audio data-key="89" src="audio/Straight-Creeper.mp3"></audio>
+    <audio data-key="85" src="audio/What-Now-Bitch.mp3"></audio>
+    <audio data-key="86" src="audio/Yes-That-Would-Be-Great.mp3"></audio>
+    <audio data-key="66" src="audio/Yummers.mp3"></audio>
+
+    <script>
+        function playsound(e){
+            const audio = document.querySelector('audio[data-key="'+e.keyCode+'"]');
+            const key = document.querySelector('.key[data-key="'+e.keyCode+'"]');
+            if(!audio) return;
+            audio.currentTime = 0;
+            audio.play();
+            key.classList.add('playing');
+        }
+        function clicksound(e){
+            const thenumber = this.getAttribute('data-key');
+            const audio = document.querySelector('audio[data-key="'+thenumber+'"]');
+            const key = document.querySelector('.key[data-key="'+thenumber+'"]');
+            if(!audio) return;
+            audio.currentTime = 0;
+            audio.play();
+        }
+        function removeTransition(e){
+            if (e.propertyName !== 'transform') return;
+            this.classList.remove('playing');
+        }
+
+        const keys = document.querySelectorAll('.key');
+        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+        [...keys].map(key => key.addEventListener("click", this.clicksound));
+        window.addEventListener('keydown', playsound);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111236396-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111236396-1');
+    </script>
+</body>
+</html>
